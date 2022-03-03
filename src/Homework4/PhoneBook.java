@@ -26,11 +26,4 @@ private HashMap<String, String> phoneBook;
         return result;
     }
 
-    public ArrayList<String> getName(){
-        ArrayList<String> res =new ArrayList<>();
-        for(Map.Entry<String,String> entryName: phoneBook.entrySet()){
-            res.add(entryName.getValue());
-        }
-        return res;
-    }
 }
