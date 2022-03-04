@@ -1,6 +1,5 @@
 package Homework4;
 
-import java.beans.PropertyEditorSupport;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +23,18 @@ private HashMap<String, String> phoneBook;
            }
         }
         return result;
+    }
+    public ArrayList<String> getNamePhone(){
+        ArrayList<String> res = new ArrayList<>();
+        String semicolon = ";";
+        char lineBreak = '\n';
+        for(Map.Entry<String,String> entry : phoneBook.entrySet()){
+
+               res.add(lineBreak + entry.getValue()+ semicolon + entry.getKey() + lineBreak) ;
+
+        }
+
+        return res;
     }
 
 }
